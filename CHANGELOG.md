@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.17] - 2025-11-13 - DUPLICATE TEXT FIX ✅
+### Fixed
+- **CRITICAL**: Removed duplicate body text display
+- Fixed template to not use {{> component this}} partial
+- Body text now appears only once (as fade text)
+- Removed default component body rendering
+
+### Changed
+- Template now manually renders displayTitle header
+- Custom implementation of component structure
+- No more duplicate text in compiled courses
+
+### Technical Details
+- {{> component this}} partial was rendering default body text
+- Our custom fadetext__text div was also rendering body text
+- Result: body appeared twice (static + animated)
+- Solution: Manual header rendering, no component partial
+
 ## [1.0.16] - 2025-11-13 - JAVASCRIPT RUNTIME FIX ✅
 ### Fixed
 - **CRITICAL**: Removed `this.checkIfResetOnRevisit()` call - doesn't exist in Adapt v5

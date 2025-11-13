@@ -1,7 +1,15 @@
 {{! Maintainers - Robert Peek}}
 <div class="component__inner fadetext__inner">
 
-  {{> component this}}
+  <div class="component__header">
+    {{#if displayTitle}}
+    <div class="component__title">
+      <h3 class="component__title-inner" data-a11y-heading="true">
+        {{{displayTitle}}}
+      </h3>
+    </div>
+    {{/if}}
+  </div>
 
   <div class="component__widget fadetext__widget">
     
