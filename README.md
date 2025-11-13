@@ -1,7 +1,8 @@
 # Adapt Fade Text
 
 [![Adapt Component](https://img.shields.io/badge/adapt-component-blue)](https://github.com/fosterc1/adapt-fadetext)
-[![Version](https://img.shields.io/badge/version-1.0.13-green)](https://github.com/fosterc1/adapt-fadetext/releases/tag/v1.0.13)
+[![Version](https://img.shields.io/badge/version-1.0.18-green)](https://github.com/fosterc1/adapt-fadetext/releases/tag/v1.0.18)
+[![Status](https://img.shields.io/badge/status-production%20ready-brightgreen)](https://github.com/fosterc1/adapt-fadetext/releases/tag/v1.0.18)
 [![Framework](https://img.shields.io/badge/framework-%3E%3D5.5-orange)](https://www.adaptlearning.org/)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue)](LICENSE)
 [![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1-green)](#accessibility)
@@ -30,15 +31,28 @@ The **Fade Text** component creates an engaging reading experience by animating 
 
 ## Installation
 
+### ⚠️ Important: Download from Releases
+
+**Always download from the [Releases page](https://github.com/fosterc1/adapt-fadetext/releases), NOT the "Download ZIP" button on the main page!**
+
+The main branch ZIP will not work due to GitHub's folder naming. Use the production ZIP from Releases.
+
+### For Adapt Authoring Tool (Recommended)
+
+1. Go to [Releases](https://github.com/fosterc1/adapt-fadetext/releases/tag/v1.0.18)
+2. Download `adapt-fadetext-v1.0.18-production.zip`
+3. Upload to your Adapt Authoring Tool
+4. Works immediately! ✅
+
 ### Using Adapt CLI
 
 ```bash
 adapt install adapt-fadetext
 ```
 
-### Manual Installation
+### Manual Installation (Framework)
 
-1. Download the component
+1. Download `adapt-fadetext-v1.0.18-production.zip` from [Releases](https://github.com/fosterc1/adapt-fadetext/releases)
 2. Extract to `src/components/` in your Adapt course
 3. Run `grunt build` or `adapt dev`
 
@@ -325,6 +339,32 @@ The component has been thoroughly audited across all key areas:
 
 ## Version History
 
+### 1.0.18 (2025-11-13) - **CURRENT - Production Ready** ✅
+- ✅ Fixed duplicate Body field in Authoring Tool
+- ✅ Fixed duplicate text display in compiled courses
+- ✅ Fixed JavaScript runtime errors (Adapt v5 compatibility)
+- ✅ Fixed LESS compilation errors
+- ✅ Fully tested and working in production
+- ✅ All known issues resolved
+
+### 1.0.17 (2025-11-13)
+- Fixed duplicate body text display in compiled courses
+- Removed component partial from template
+
+### 1.0.16 (2025-11-13)
+- Fixed JavaScript runtime error (checkIfResetOnRevisit)
+- Adapt Framework v5 compatibility improvements
+
+### 1.0.15 (2025-11-13)
+- Fixed LESS compilation errors
+- Replaced Adapt mixins with standard CSS media queries
+- Better compatibility across Adapt versions
+
+### 1.0.12-1.0.14 (2025-11-13)
+- Repository structure improvements
+- GitHub download workflow fixes
+- Production release packaging
+
 ### 1.0.0 (2025-11-08)
 - ✅ Initial release
 - ✅ Scroll-based fade effect
@@ -336,6 +376,8 @@ The component has been thoroughly audited across all key areas:
 - ✅ Comprehensive documentation
 - ✅ Interactive demo included
 - ✅ Audit score: 97/100
+
+**See [CHANGELOG.md](CHANGELOG.md) for complete version history.**
 
 ## License
 
