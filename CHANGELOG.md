@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.18] - 2025-11-13 - DUPLICATE BODY FIELD FIX ✅
+### Fixed
+- **CRITICAL**: Removed duplicate "body" field definition in properties.schema
+- Body field now inherited from base component model only
+- Authoring Tool now shows only one Body text field
+
+### Technical Details
+- properties.schema inherits from base component via $ref
+- Base component model already provides body, title, displayTitle fields
+- Duplicate definition caused two Body fields in Authoring Tool
+- Removed redundant body definition - inherited one is sufficient
+
 ## [1.0.17] - 2025-11-13 - DUPLICATE TEXT FIX ✅
 ### Fixed
 - **CRITICAL**: Removed duplicate body text display

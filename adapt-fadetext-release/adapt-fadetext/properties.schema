@@ -29,15 +29,6 @@
       "help": "This is the instruction text",
       "translatable": true
     },
-    "body": {
-      "type": "string",
-      "required": true,
-      "default": "",
-      "inputType": "TextArea",
-      "validators": ["required"],
-      "help": "The text content that will fade in as the user scrolls. Each word will fade independently.",
-      "translatable": true
-    },
     "_fadeText": {
       "type": "object",
       "required": true,
