@@ -29,14 +29,21 @@ adapt-fadetext-v1.0.3.zip
 
 ---
 
-## 📦 Ready-to-Upload ZIP File
+## 📦 How to Download the Plugin
 
-**File:** `/home/user/webapp/adapt-fadetext-v1.0.3.zip`  
-**Size:** 14K  
-**Version:** 1.0.3  
-**Structure:** ✅ Correct (folder-based)
+### From GitHub:
 
-### ZIP Contents:
+1. **Go to:** https://github.com/fosterc1/adapt-quote
+2. **Click:** Green "Code" button
+3. **Click:** "Download ZIP"
+4. **Result:** GitHub automatically creates a ZIP with proper structure
+
+**OR**
+
+Download directly from the PR branch:
+- https://github.com/fosterc1/adapt-quote/archive/refs/heads/fix/add-schema-directory.zip
+
+### ZIP Will Contain:
 ```
 adapt-fadetext-v1.0.3/
 ├── bower.json                    ✅ Plugin metadata
@@ -169,35 +176,36 @@ Your manual ZIP must match this structure!
 
 ---
 
-## 🛠️ How to Create This ZIP Manually
+## 🛠️ GitHub Automatically Creates Correct ZIP Structure
 
-If you need to recreate the ZIP:
+When you use GitHub's "Download ZIP" button or download from a branch URL:
+- GitHub automatically wraps files in a folder: `repository-branch/`
+- No manual ZIP creation needed
+- Structure is always correct
 
+### Example GitHub ZIP Structure:
+```
+adapt-quote-fix-add-schema-directory/
+├── bower.json
+├── package.json
+├── properties.schema
+├── schema/
+│   └── component.schema.json
+└── ...
+```
+
+### If You Need to Create ZIP Manually:
 ```bash
-# From your project root
-cd /home/user
-
-# Create clean copy
-cp -r webapp adapt-fadetext-v1.0.3
-
-# Remove unwanted files
-cd adapt-fadetext-v1.0.3
-rm -rf .git reference-repo *.md package-lock.json *.zip
-
-# Create ZIP
+# Download as ZIP from GitHub, OR:
+# Clone the repo and create release
+git clone https://github.com/fosterc1/adapt-quote.git
+cd adapt-quote
+git checkout fix/add-schema-directory
 cd ..
-zip -r adapt-fadetext-v1.0.3.zip adapt-fadetext-v1.0.3/
-
-# Verify structure
-unzip -l adapt-fadetext-v1.0.3.zip | head -20
+zip -r adapt-fadetext.zip adapt-quote/ -x "*/\.git/*"
 ```
 
-The first line should show the folder:
-```
-adapt-fadetext-v1.0.3/
-```
-
-NOT just individual files!
+The key is: **ZIP must contain a folder, not files at root level**
 
 ---
 
