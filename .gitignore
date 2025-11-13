@@ -28,3 +28,4 @@ temp/
 # Exclude ZIP files (use GitHub download instead)
 *.zip
 reference-repo/
+adapt-fadetext-v*.zip
