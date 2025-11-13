@@ -16,5 +16,6 @@
     "reveal",
     "animation"
   ],
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "targetAttribute": "_component"
 }
